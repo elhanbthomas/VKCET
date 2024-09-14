@@ -1,0 +1,36 @@
+.header{
+    background-image: linear-gradient(to right, rgba(0, 143, 252, 0.767), rgba(231, 194, 6, 0.542));
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Gill  sans-serif;
+}
+
+
+.links{
+    color: yellow;
+    font-size: 12pt;
+}
+.heading{
+    font-weight: 900;
+    color: white;
+}
+.name{
+    display: inline-block;
+    font-weight: normal;
+    font-style: italic;
+    font-family: Gill sans-serif;
+}
+
+@media (max-width:1024px){
+    .links{display: none;}
+    .heading{font-size: 40pt;}
+    .logo{width: 30%;}
+    .name{font-size: 12pt;}
+}
+@media (min-width:1024px){
+    .heading{font-size: 70pt;}
+    .logo{width: 10%;}
+    .name{font-size: 20pt;}
+}

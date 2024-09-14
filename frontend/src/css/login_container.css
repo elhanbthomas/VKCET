@@ -1,0 +1,54 @@
+
+
+.container{
+    display: flex;
+    /* gap: 12%; */
+    /* justify-content: space-between; */
+    background-image: linear-gradient(to bottom,  rgba(0, 143, 252, 0.305), rgba(231, 194, 6, 0.289));
+}
+.cardContainer{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 15px;
+    /* margin-left: 8%; */
+}
+.card{
+    background-image: linear-gradient(to right, rgba(0, 143, 252, 0.305), rgba(231, 194, 6, 0.289));
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+    width: 100%;
+}
+.icon{
+    width: 100px;
+    margin: 0 auto;
+}
+.title{
+    color: black;
+    font-size: 25pt;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.card:hover{
+    box-shadow: 0px 5px 10px rgba(35, 31, 31, 0.468);
+}
+.college{
+    width: 63%;
+    /* margin-right: 12%; */
+}
+
+@media (min-width:1024px){
+    .cardContainer{width: 15%; margin-left: 10%;}
+    .card{padding: 23%;}
+    
+    .container{padding-top: 0.5%;}
+}
+@media (max-width:1024px){
+    .cardContainer{padding: 15%;}
+    .card{padding: 10%; text-align: center;}
+    .college{display: none;}
+    .container{gap: 0; display: block;}
+}
