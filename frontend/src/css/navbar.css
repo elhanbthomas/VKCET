@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(120, 187, 250);
+}
+.Heading{
+    font-family: Gill;
+    color: white;
+    font-weight: bold;
+}
+.menu{
+    width: 10%;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.dropArrow{
+    width: 15%;
+}
+.name{
+    font-size: 14pt;
+    color: white;
+}
+
+.dropbox{
+    position: fixed;
+    
+}
+
+@media (max-width:768px){
+    .navbar{padding: 5%;}
+    .logo{width: 20%;}
+    .Heading{font-size: 25pt;}
+    .dropdown{display: none;}
+    .dropbox{right: 10%;top: 25%;}
+}
+
+@media (min-width:768px){
+    .navbar{padding: 1% 5%;}
+    .logo{width: 10%;}
+    .Heading{font-size: 46pt;}
+    .menu{display: none;}
+    .dropbox{right: 10%; top: 25%;}
+}

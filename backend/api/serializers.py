@@ -1,10 +1,12 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 
+from userprofile.models import StudentProfile
+
 class UserSerializer(serializers.ModelSerializer):
-    username = serializers.Charfield()
-    password = serializers.Charfield(write_only = True)
-    confirm_password = serializers.Charfield(write_only = True)
+    username = serializers.CharField()
+    password = serializers.CharField(write_only = True)
+    confirm_password = serializers.CharField(write_only = True)
     class Meta:
         model = User
         fields = ['username', 'password', 'confirm_password']
@@ -28,3 +30,10 @@ class UserSerializer(serializers.ModelSerializer):
             password = validated_data['password']
         )
         return user
+
+class StudentDashboardSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = StudentProfile
+        fields = ['fname', 'lname', 'department']    
+    

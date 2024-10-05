@@ -1,0 +1,23 @@
+.dropcontainer{
+    border: solid black 1px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: white;
+    box-shadow: 2px 2px 0px rgb(78, 78, 78);
+}
+
+.list{
+    color: black;
+    font-size: 14pt;
+    font-family: Gill;
+}
+
+@media (max-width:1024px){
+    .dropcontainer{padding: 15% 20%;}
+}
+
+@media (min-width:1024px){
+    .dropcontainer{padding: 1% 2%;}
+}

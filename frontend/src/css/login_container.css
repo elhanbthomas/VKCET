@@ -2,9 +2,10 @@
 
 .container{
     display: flex;
+    background-color: rgb(244, 250, 255);
     /* gap: 12%; */
     /* justify-content: space-between; */
-    background-image: linear-gradient(to bottom,  rgba(0, 143, 252, 0.305), rgba(231, 194, 6, 0.289));
+    /* background-image: linear-gradient(to bottom,  rgba(0, 143, 252, 0.305), rgba(231, 194, 6, 0.289)); */
 }
 .cardContainer{
     /* margin-top: 10px; */
@@ -16,11 +17,12 @@
     /* margin-left: 8%; */
 }
 .card{
-    background-image: linear-gradient(to right, rgba(0, 143, 252, 0.305), rgba(231, 194, 6, 0.289));
+    /* background-color:  rgb(200, 228, 254); */
     border-radius: 10px;
     transition: box-shadow 0.5s;
     cursor: pointer;
     width: 100%;
+    border: solid 2px rgb(197, 197, 197)
 }
 .icon{
     width: 100px;

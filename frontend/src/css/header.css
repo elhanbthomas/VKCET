@@ -1,5 +1,6 @@
 .header{
-    background-image: linear-gradient(to right, rgba(0, 143, 252, 0.767), rgba(231, 194, 6, 0.542));
+    /* background-image: linear-gradient(to right, rgba(0, 143, 252, 0.767), rgba(231, 194, 6, 0.542)); */
+    background-color: rgb(120, 187, 250);
     padding: 1% 5%;
     display: flex;
     justify-content: space-between;
