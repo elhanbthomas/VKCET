@@ -14,5 +14,5 @@ __pycache__/
 *.swp
 
 # Django migration files (optional; consider whether to include migrations in version control)
-*/migrations/*
+/migrations/
 !*/migrations/__init__.py
